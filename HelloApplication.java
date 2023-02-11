@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class HelloApplication {
     public static void main(String[] args) {
         int liczba_1;
-        int liczba_2 = 0;
+        int liczba_2 ;
         char znak;
         Scanner wej = new Scanner(System.in);
 
@@ -58,7 +58,9 @@ public class HelloApplication {
             {
                 System.out.println("Podaj potege");
                 liczba_2 = wej.nextInt();
-                Math.pow(double a, double b)
+                double power = Math.pow(liczba_1, liczba_2);
+                System.out.println(power);
+                break;
             }
             default:
             {
