@@ -58,7 +58,7 @@ public class HelloApplication {
             {
                 System.out.println("Podaj potege");
                 liczba_2 = wej.nextInt();
-                double answer = Math.pow(liczba_1, liczba_2);
+                Math.pow(double a, double b)
             }
             default:
             {
