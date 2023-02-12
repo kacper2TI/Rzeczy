@@ -4,7 +4,7 @@ import java.lang.Math;
 
 import java.util.Scanner;
 
-public class HelloApplication {
+public class Kalkulator {
     public static void main(String[] args) {
         int liczba_1;
         int liczba_2 ;
