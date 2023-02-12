@@ -9,7 +9,7 @@ public class petla {
         int a = scanner.nextInt();
         System.out.println("Podaj liczbe b");
         int b = scanner.nextInt();
-        for (int i = a; i <= b; i*= 2 ) {
+        for (int i = a; i <= b; i ++ ) {
             System.out.print(i+",");
         }
     }
