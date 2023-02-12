@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.Math.sqrt;
 
-public class Zadania {
+public class Obliczanie {
     public static void main(String[] args){
 
         //powrot do poprzedniego menu jesli wybierzemy niepoprawną opcję
