@@ -2,22 +2,28 @@ package com.example.rzeczy;
 
 import java.util.Scanner;
 
+import static java.lang.Math.sqrt;
+
 public class Zadania {
     public static void main(String[] args){
 
         //powrot do poprzedniego menu jesli wybierzemy niepoprawną opcję
         Scanner wej = new Scanner(System.in);
-        System.out.println("OBLICZANIE POLA I OBWODU ");
+        System.out.println("          |MENU GŁÓWNE| ");
         System.out.println("-----------------------------------");
-        System.out.println("1. Koło");
-        System.out.println("2. Kwadrat");
-        System.out.println("3. Prostokąt");
-        System.out.println("4. Trójkat");
-        System.out.println("5. Trapez");
-        System.out.println("6. Równoległobok");
-        System.out.println("7. Romb lub deltoid");
-        System.out.println("8. Funkcja kwadratowa");
+        System.out.println("|           1. Koło               |");
+        System.out.println("|           2. Kwadrat            |");
+        System.out.println("|           3. Prostokąt          |");
+        System.out.println("|           4. Trójkat            |");
+        System.out.println("|           5. Trapez             |");
+        System.out.println("|           6. Równoległobok      |");
+        System.out.println("|           7. Romb lub deltoid   |");
+        System.out.println("|           8. Funkcja kwadratowa |");
+        System.out.println("|           9. Wszystkie wzory    |");
         System.out.println("-----------------------------------");
+        System.out.println("====================================");
+        System.out.println("Co chcesz obliczyć ? (wybierz numer) ");
+        System.out.println("====================================");
         char znak;
         znak = wej.next().charAt(0);
         switch (znak) {
@@ -121,23 +127,52 @@ public class Zadania {
             }
             case '8':
             {
-                System.out.println("Co chcesz obliczyć ? ");
-                System.out.println("1. delta");
-                System.out.println("2. Wierzchołek");
-                char znak2;
-                znak2 = wej.next().charAt(0);
-                switch (znak2){
-                    case'1':
-                    {
-                        System.out.println("Podaj a, b, c");
-                        int a = wej.nextInt();
-                        int b = wej.nextInt();
-                        int c = wej.nextInt();
-                        int delta = (b*b) - 4 *a * c;
+                System.out.println("Obliczanie delty funkcji kwadratowej");
 
-                    }
-
+                System.out.println("Podaj a, b, c");
+                System.out.println("a");
+                int a = wej.nextInt();
+                if ( a == 0){
+                    System.out.println("FUNKCJA NIE ISTNIEJE !");
+                    break;
                 }
+                System.out.println("b");
+                int b = wej.nextInt();
+                System.out.println("c");
+                int c = wej.nextInt();
+                int delta = (b*b) - 4 *a * c;
+                int p = -b/ (2*a);
+                int q = -delta/ (4*a);
+                System.out.println("Delta wynosi: " + delta);
+                System.out.println("Wierzchołek funkcji wynosi " + "(" + p + "," + q + ") ");
+                System.out.println("Oś symetrii funkcji wynosi x=" + p);
+                if(a > 0 ){
+                    System.out.println("funkcja jest rosnąca");
+                    System.out.println("Y min = " + q + " dla x = " + p);
+                }
+                if(a < 0 ){
+                    System.out.println("funkcja jest malejąca");
+                    System.out.println("Y max = " + q + " dla x = " + p);
+                }
+                if(delta > 0 )
+                {
+                    System.out.println("Delta posiada 2 miejsca zerowe");
+                    double x1 = (-b - Math.sqrt(delta)) / (2*a);
+                    double x2 = (-b + Math.sqrt(delta)) / (2*a);
+                    System.out.println("Miejsca zerowe wynoszą: ");
+                    System.out.println(x1 + " oraz " + x2);
+                    break;
+                } if (delta == 0)
+                {
+                    int x0 = -b/ (2*a);
+                    System.out.println("Delta ma 1 miejsce zerowe, które jest równe: " + x0);
+                    break;
+                }
+                if (delta < 0){
+                    System.out.println("Delta nie ma miejsc zerowych");
+                }
+                break;
+
             }
             default:
             {
