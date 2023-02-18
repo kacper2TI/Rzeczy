@@ -9,13 +9,14 @@ public class prostokat {
         int a = wej.nextInt();
         System.out.println("Podaj szerokość prostokąta");
         int b = wej.nextInt();
+        int pole = a*b;
         for (int i = 0; i < b; i++) {
             for (int j = 0; j < a ; j++) {
                 System.out.print("* ");
             }
             System.out.println();
-
-            
         }
+        System.out.println("Pole tego prostokąta wynosi " + pole);
+
     }
 }
