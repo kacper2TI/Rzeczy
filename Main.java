@@ -1,5 +1,5 @@
 package aplikacja;
-
+//program.fxml do tego programu
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
