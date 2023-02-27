@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Obliczmy pole i obwód koła");
+        const r = Number (prompt("Podaj promień koła ",""));
+        const PI = Math.PI.toFixed(2);
+        let obwód = 2*PI*r;
+        let pole = PI * Math.pow(r,(2));
+
+        document.write("Obwód koła wynosi "+ obwód+ "<br>");
+        document.write("Pole koła wynosi " + pole)
+
+    </script>
+</body>
+</html>
