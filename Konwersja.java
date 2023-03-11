@@ -1,7 +1,7 @@
 package com.example.rzeczy;
 
 import java.util.Scanner;
-
+//Konwersja systemu dziesiętnego na 2,8,16
 public class Konwersja {
     public static void main(String[] args) {
         Scanner wej = new Scanner(System.in);
