@@ -1,7 +1,4 @@
-#konwersja typu
-# cokolwiek = float(input("Wpisz liczbę: "))
-# cos = cokolwiek ** 2.0
-# print(cokolwiek, "do potegi 2 wynosi", cos)
+#program w python obliczający pole i obwod prostakąta
 
 cokolwiek1 = float(input("Wpisz bok a: "))
 cokolwiek2 = float(input("wpisz bok b: "))
