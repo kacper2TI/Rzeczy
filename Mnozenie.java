@@ -1,5 +1,5 @@
 package com.example.rzeczy;
-
+//wyświetlanie tabliczki mnożenia 
 public class Mnozenie {
     public static void main(String[] args) {
         for (int i = 1; i <= 10; i++) {
