@@ -1,5 +1,5 @@
 package com.example.rzeczy;
-
+//odliczanie do wybuchu bomby
 import java.util.Scanner;
 
 import static java.lang.Thread.sleep;
